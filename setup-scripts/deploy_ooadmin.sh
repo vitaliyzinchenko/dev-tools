@@ -53,3 +53,12 @@ do
 done
 
 echo "Done with admin"
+
+echo "install inductor"
+
+cd /opt/oneops
+inductor create
+
+\cp /opt/activemq/conf/client.ts /opt/oneops/inductor/lib
+
+echo "done with inductor"
