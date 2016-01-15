@@ -2,7 +2,7 @@
 
 export BUILD_BASE='/home/oneops/build'
 export OO_HOME='/home/oneops'
-export GITHUB_URL=git@gecgit:oneops
+export GITHUB_URL=git@oogit:oneops
 
 mkdir -p $BUILD_BASE
 
