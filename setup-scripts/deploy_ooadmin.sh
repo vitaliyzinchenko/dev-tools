@@ -7,7 +7,7 @@ gem install  $OO_HOME/dist/oneops/dist/oneops-admin-1.0.0.gem --no-ri --no-rdoc
 mkdir -p /opt/oneops-admin
 cd /opt/oneops-admin
 
-export DISPLAY_LOCAL_STORE="/opt/oneops/public/images"
+export DISPLAY_LOCAL_STORE="/opt/oneops/public"
 rm -fr circuit
 circuit create
 cd circuit
