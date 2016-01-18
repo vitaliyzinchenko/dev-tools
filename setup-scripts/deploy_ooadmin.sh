@@ -40,19 +40,6 @@ cd "$BUILD_BASE/circuit-oneops-1"
 bundle install
 circuit install
 
-mkdir -p /opt/oneops/public/images/cms
-mkdir -p /opt/oneops/public/images/pack
-
-for img in $BUILD_BASE/circuit-oneops-1/components/cookbooks/*/doc/*.png
-do
-   cp "${img}" /opt/oneops/public/images/cms
-done
-
-for img in $BUILD_BASE/circuit-oneops-1/packs/doc/*.png
-do
-   cp "${img}" /opt/oneops/public/images/pack
-done
-
 echo "Done with admin"
 
 echo "install inductor"
