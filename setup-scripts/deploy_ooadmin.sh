@@ -49,4 +49,7 @@ inductor create
 
 \cp /opt/activemq/conf/client.ts /opt/oneops/inductor/lib
 
+cd /opt/oneops/inductor
+ln -sf /home/oneops/build/circuit-oneops-1 .
+
 echo "done with inductor"
