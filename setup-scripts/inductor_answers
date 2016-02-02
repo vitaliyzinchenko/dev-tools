@@ -1,0 +1,17 @@
+localhost
+on
+on
+false
+public_ip
+shared
+http://localhost:9090
+
+
+10
+10
+superuser:amqpass
+
+
+
+
+
