@@ -46,10 +46,10 @@ echo "install inductor"
 
 cd /opt/oneops
 inductor create
-
+cd inductor
+# add inductor using shared queue
+inductor add < /home/oneops/build/dev-tools/setup-scripts/inductor_answers
 \cp /opt/activemq/conf/client.ts /opt/oneops/inductor/lib
-
-cd /opt/oneops/inductor
 ln -sf /home/oneops/build/circuit-oneops-1 .
 
 echo "done with inductor"
