@@ -51,5 +51,6 @@ cd inductor
 inductor add < /home/oneops/build/dev-tools/setup-scripts/inductor_answers
 \cp /opt/activemq/conf/client.ts /opt/oneops/inductor/lib
 ln -sf /home/oneops/build/circuit-oneops-1 .
+inductor start
 
 echo "done with inductor"
