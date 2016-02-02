@@ -52,5 +52,9 @@ inductor add < /home/oneops/build/dev-tools/setup-scripts/inductor_answers
 \cp /opt/activemq/conf/client.ts /opt/oneops/inductor/lib
 ln -sf /home/oneops/build/circuit-oneops-1 .
 inductor start
+inductor install_initd
+ln -sf /etc/init.d/inductor /etc/rc3.d/S99inductor
+echo "source /etc/profile.d/rvm.sh" > /opt/oneops/inductor_env.sh
+echo "export INDUCTOR_HOME=/opt/oneops/inductor" >> /opt/oneops/inductor_env.sh
 
 echo "done with inductor"
