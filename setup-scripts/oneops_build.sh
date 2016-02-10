@@ -9,10 +9,16 @@ export GITHUB_CIRCUIT_URL=git@gecgit:walmartlabs
 now=$(date +"%T")
 echo "Starting at : $now"
 
+echo "Stopping services to free up memory for build"
+service cassandra stop
+
 source $OO_HOME/install_build_srvr.sh
 
 now=$(date +"%T")
 echo "Completed git build : $now"
+
+echo "Starting services after build before deploy"
+service cassandra start
 
 source $OO_HOME/init_db.sh
 
