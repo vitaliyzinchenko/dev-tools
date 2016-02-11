@@ -49,7 +49,8 @@ inductor create
 cd inductor
 # add inductor using shared queue
 inductor add < /home/oneops/build/dev-tools/setup-scripts/inductor_answers
-\cp /opt/activemq/conf/client.ts /opt/oneops/inductor/lib
+mkdir /opt/oneops/inductor/lib
+\cp /opt/activemq/conf/client.ts /opt/oneops/inductor/lib/client.ts
 ln -sf /home/oneops/build/circuit-oneops-1 .
 inductor start
 
