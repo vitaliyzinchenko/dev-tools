@@ -12,6 +12,6 @@ http://localhost:9090
 superuser:amqpass
 
 
-
+/opt/oneops/inductor/lib/client.ts
 
 
