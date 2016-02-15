@@ -23,6 +23,7 @@ dbversion=$(rake db:version | grep "Current version:" | awk '{print $3}')
 echo "Current db version" $dbversion
 if [ "$dbversion" ==  "0" ]; then
    rake db:setup
+   rake db:migrate
 else
    rake db:migrate
 fi
