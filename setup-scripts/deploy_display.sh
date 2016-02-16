@@ -10,7 +10,7 @@ mv $OO_HOME/dist/oneops/dist/app.tar.gz /opt/oneops/app.tar.gz
 cd /opt/oneops
 
 # backup current app director if it exists
-if [ -d app ]
+if [ -d app ]; then
   rm -fr app~
   mv app app~
 fi
