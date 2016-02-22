@@ -49,7 +49,7 @@ sleep 5
 
 
 echo "submit build"
-curl -X POST http://localhost:3001/job/oo-all-oss/build --data token=TOKEN --data-urlencode json='{"parameter": [{"name":"REF", "value":"master"}, {"name":"VERSION", "value":"continuous"}, {"name":"TAG", "value":"false"}, {"name":"PUSH_TAG", "value":""}]}'
+curl -X POST http://localhost:3001/job/oo-all-oss/build --data token=TOKEN --data-urlencode json='{"parameter": [{"name":"REF", "value":"master"}, {"name":"VERSION", "value":"stable"}, {"name":"TAG", "value":"false"}, {"name":"PUSH_TAG", "value":""}]}'
 
 GREP_RETURN_CODE=0
 
